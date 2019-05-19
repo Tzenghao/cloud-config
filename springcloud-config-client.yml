@@ -7,11 +7,11 @@ server:
     port: 8201
 spring:
     profiles: dev
-    application:
+    application: 
         name: springcloud-config-server
 eureka:
     client:
-        service-url:
+        serviceUrl:
             defaultZone: http://localhost:8000/eureka/
 ---
 server:
@@ -22,5 +22,5 @@ spring:
         name: springcloud-config-server
 eureka:
     client:
-        service-url:
+        serviceUrl:
             defaultZone: http://localhost:8000/eureka/
